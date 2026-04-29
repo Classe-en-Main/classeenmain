@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Tarifs — Classe En Main</title>
+  <meta name="description" content="Découvrez nos cours individuels, ateliers en groupe et forfaits de suivi. Paiement sécurisé via PayPal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">CM</span>
+        <span>Classe En Main</span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services & Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Programmes de coaching</span>
+          <h1 style="font-size: clamp(2rem, 4vw, 3rem);">Services & Tarifs</h1>
+          <p>Trois formules pensées pour s'adapter à votre rythme et à vos objectifs. Paiement sécurisé via PayPal — accès envoyé par courriel sous 24h.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Coaching Essentiel -->
+          <div class="service-card">
+            <h3>Coaching Essentiel</h3>
+            <span class="duration">Accès 30 jours</span>
+            <p>Idéal pour démarrer en douceur avec une communauté motivante. Vous bénéficiez de tout le contenu vidéo et de l'énergie d'un coaching collectif.</p>
+            <div class="price">297 €<small> / 30 jours</small></div>
+            <ul>
+              <li>Accès aux contenus vidéo (30 jours)</li>
+              <li>Coaching de groupe</li>
+              <li>Plateforme accessible 24/7</li>
+              <li>Support par courriel</li>
+            </ul>
+            <div class="paypal-button-container">
+              <!-- BOUTON PAYPAL: remplacez VOTRE_ID_HOSTED_BUTTON_1 par votre identifiant -->
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="VOTRE_ID_HOSTED_BUTTON_1">
+                <input type="hidden" name="currency_code" value="EUR">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Choisir Essentiel — 297 €</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Coaching Personnalisé (vedette) -->
+          <div class="service-card featured">
+            <span class="service-badge">Populaire</span>
+            <h3>Coaching Personnalisé</h3>
+            <span class="duration">Accès 30 jours</span>
+            <p>Un accompagnement sur mesure avec quatre séances individuelles d'une heure et la possibilité d'échanger entre les séances.</p>
+            <div class="price">395 €<small> / 30 jours</small></div>
+            <ul>
+              <li>4 séances de coaching personnalisé (1h)</li>
+              <li>Accès aux contenus vidéo (30 jours)</li>
+              <li>Messagerie instantanée avec votre coach</li>
+              <li>Plan d'objectifs personnalisé</li>
+            </ul>
+            <div class="paypal-button-container">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="VOTRE_ID_HOSTED_BUTTON_2">
+                <input type="hidden" name="currency_code" value="EUR">
+                <button type="submit" class="btn btn-accent" style="width: 100%;">Choisir Personnalisé — 395 €</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Premium -->
+          <div class="service-card">
+            <h3>Premium</h3>
+            <span class="duration">Accès 365 jours</span>
+            <p>L'expérience la plus complète : un an d'accompagnement, six séances individuelles et l'accès privilégié à la communauté Classe En Main.</p>
+            <div class="price">599 €<small> / an</small></div>
+            <ul>
+              <li>Accès aux contenus vidéo (365 jours)</li>
+              <li>6 séances de coaching personnalisé</li>
+              <li>Messagerie instantanée avec votre coach</li>
+              <li>Accès à la communauté privée</li>
+            </ul>
+            <div class="paypal-button-container">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="VOTRE_ID_HOSTED_BUTTON_3">
+                <input type="hidden" name="currency_code" value="EUR">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Choisir Premium — 599 €</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+          <h3 style="font-family: var(--font-heading); color: var(--color-primary);">Une question avant de vous inscrire?</h3>
+          <p style="margin-bottom: 1.5rem;">Hésitation entre deux formules, besoin sur mesure ou demande spécifique — écrivez-moi, je vous oriente vers le programme le plus adapté.</p>
+          <a href="contact.html" class="btn btn-outline">Demander conseil</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Comment ça fonctionne</span>
+          <h2>De l'inscription à votre transformation</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon" style="background: var(--color-accent); color: #fff;">1</div>
+            <h3>Vous choisissez votre formule</h3>
+            <p>Essentiel, Personnalisé ou Premium — selon vos objectifs et le niveau d'accompagnement souhaité.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" style="background: var(--color-accent); color: #fff;">2</div>
+            <h3>Vous payez en toute sécurité</h3>
+            <p>Paiement via PayPal, accès envoyé par courriel sous 24 heures.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" style="background: var(--color-accent); color: #fff;">3</div>
+            <h3>Vous accédez à la plateforme</h3>
+            <p>Contenus vidéo, séances de coaching et messagerie selon votre formule — disponibles 24/7.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" style="background: var(--color-accent); color: #fff;">4</div>
+            <h3>Vous avancez à votre rythme</h3>
+            <p>Avec un coach, une communauté et des outils concrets pour atteindre vos objectifs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-mark">CM</span>
+            <span>Classe En Main</span>
+          </div>
+          <p>Cours et ateliers en ligne pour apprendre à votre rythme, avec un accompagnement humain et professionnel.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:classe-en-main@hotmail.com">classe-en-main@hotmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="current-year"></span> Classe En Main. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
