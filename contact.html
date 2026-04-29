@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Classe En Main</title>
+  <meta name="description" content="Une question, un projet sur mesure? Écrivez-nous via le formulaire ou directement par courriel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">CM</span>
+        <span>Classe En Main</span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services & Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 4rem;">
+          <span class="section-eyebrow">Contact</span>
+          <h1 style="font-size: clamp(2rem, 4vw, 3rem);">Discutons de votre projet</h1>
+          <p>Une question, un besoin spécifique, un projet sur mesure? Écrivez-moi — je réponds sous 24h ouvrées.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <h3>Courriel</h3>
+              <p><a href="mailto:classe-en-main@hotmail.com">classe-en-main@hotmail.com</a></p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Disponibilité</h3>
+              <p>Du lundi au vendredi, 9h–18h<br>Réponse sous 24h ouvrées</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Format des cours</h3>
+              <p>100% en ligne, en visio<br>(Zoom, Google Meet)</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Première rencontre</h3>
+              <p>Un appel de 15 min offert pour cerner vos besoins, sans engagement.</p>
+            </div>
+          </div>
+
+          <!-- FORMULAIRE: remplacez VOTRE_ID_FORMSPREE par votre identifiant Formspree (https://formspree.io) -->
+          <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+            <div class="form-group">
+              <label for="name">Nom complet *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Courriel *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject">
+                <option>Demande d'information</option>
+                <option>Coaching Essentiel (297 €)</option>
+                <option>Coaching Personnalisé (395 €)</option>
+                <option>Premium (599 €)</option>
+                <option>Demande sur mesure</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Parlez-moi de votre projet, niveau, objectifs…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+            <p style="font-size: 0.82rem; margin-top: 1rem; color: var(--color-muted);">Vos informations restent confidentielles. Aucun envoi promotionnel sans votre accord.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-mark">CM</span>
+            <span>Classe En Main</span>
+          </div>
+          <p>Cours et ateliers en ligne pour apprendre à votre rythme, avec un accompagnement humain et professionnel.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:classe-en-main@hotmail.com">classe-en-main@hotmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="current-year"></span> Classe En Main. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
