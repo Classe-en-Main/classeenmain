@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos — Classe En Main</title>
+  <meta name="description" content="Découvrez la mission, le parcours et les valeurs de Classe En Main, votre partenaire pédagogique en ligne." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">CM</span>
+        <span>Classe En Main</span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services & Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 4rem;">
+          <span class="section-eyebrow">À propos</span>
+          <h1 style="font-size: clamp(2rem, 4vw, 3rem);">Qui suis-je</h1>
+        </div>
+
+        <div class="about-content" style="max-width: 760px; margin: 0 auto;">
+          <span class="section-eyebrow">Ma mission</span>
+          <h2>Rendre l'apprentissage accessible, vivant et durable.</h2>
+          <p>Bienvenue chez <strong>Classe En Main</strong>. J'accompagne depuis plusieurs années des apprenants de tous âges dans leur parcours scolaire et personnel. Mon rôle: vous transmettre non seulement des connaissances, mais aussi la confiance et la méthode pour aller plus loin par vous-même.</p>
+          <p>Que vous soyez parent, élève ou adulte en formation continue, je conçois chaque cours comme un espace d'écoute, de rigueur et de progression mesurable.</p>
+
+          <span class="section-eyebrow" style="margin-top: 2.5rem; display: block;">Mes valeurs</span>
+          <ul class="values-list">
+            <li><strong>Bienveillance.</strong> Un cadre rassurant où chacun peut poser ses questions sans crainte.</li>
+            <li><strong>Rigueur.</strong> Des objectifs clairs, un suivi régulier, des résultats vérifiables.</li>
+            <li><strong>Adaptabilité.</strong> Pas de méthode unique — chaque apprenant a la sienne.</li>
+            <li><strong>Transparence.</strong> Tarifs clairs, attentes partagées, communication ouverte.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Parcours</span>
+          <h2>Mon expérience</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <h3>Formation</h3>
+            <p>[À personnaliser] Vos diplômes, certifications et formations continues.</p>
+          </div>
+          <div class="feature">
+            <h3>Expérience</h3>
+            <p>[À personnaliser] Années d'enseignement, types de publics accompagnés.</p>
+          </div>
+          <div class="feature">
+            <h3>Spécialités</h3>
+            <p>[À personnaliser] Matières, niveaux et types d'accompagnement proposés.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <h2>Discutons de votre projet</h2>
+      <p>Chaque parcours est unique. Prenons le temps d'en parler — sans engagement.</p>
+      <a href="contact.html" class="btn btn-accent">Me contacter</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-mark">CM</span>
+            <span>Classe En Main</span>
+          </div>
+          <p>Cours et ateliers en ligne pour apprendre à votre rythme, avec un accompagnement humain et professionnel.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:classe-en-main@hotmail.com">classe-en-main@hotmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="current-year"></span> Classe En Main. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
